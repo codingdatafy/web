@@ -1,0 +1,72 @@
+# @project CodingDatafy
+# @license MIT
+# @copyright 2026 CodingDatafy Organization
+# @author CodingDatafy Team
+
+
+# === Dependencies ===
+# Ignore local dependencies and package manager artifacts
+node_modules/
+.pnp
+.pnp.js
+
+# === Next.js Framework ===
+# Ignore Next.js build output and Turbopack cache (Next.js 16)
+.next/
+out/
+.turbo/
+# Cache for faster builds
+.cache/
+
+# === TypeScript ===
+# Ignore TypeScript incremental build info and auto-generated env types
+*.tsbuildinfo
+next-env.d.ts
+
+# === Environment Variables ===
+# Sensitive credentials must NEVER be committed to the repository
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Production & Vercel ===
+# Ignore build artifacts and Vercel-specific deployments
+build/
+.vercel
+
+# === Cloudflare ===
+# Ignore Cloudflare Wrangler's local development storage and logs
+.wrangler/
+
+# === Testing & Quality Control ===
+# Code coverage and linter caches
+coverage/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === IDEs and Editor Configurations ===
+# Ignore personal editor settings but keep shared workspace extensions
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === Operating System Files ===
+# Common OS-generated files
+.DS_Store
+Thumbs.db
+
+# === Temporary Files ===
+*.bak
+*.tmp
+*.temp
